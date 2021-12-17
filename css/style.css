@@ -6,6 +6,7 @@ iframe{
 .body {
   font-family: 'Quicksand', sans-serif;
   background: #888888;
+  margin-bottom: auto;
 }
 
 .navbar{
@@ -68,24 +69,32 @@ button:hover{
   bottom:0;
   width:100%;
   height:auto;
-  background:rgb(102, 153, 255);
   left: 0;
+  background-color: rgb(102, 153, 255);
 }
 .footer_links{
   width: 30%;
   padding-left: 20px;
   float:left;
+  padding-top: 30px;
+}
+
+.footer_title{
+  font-weight: bold;
 }
 
 .footer_aside{
   width: 30%;
   float: left;
   padding-left: 20px;
+  padding-top: 30px;
+
 }
 
 .footer-copyright{
   position:absolute;
   bottom: 2px;
+
 }
 
 .content_img{
@@ -94,10 +103,14 @@ button:hover{
   float: left;
 }
 
-.content_img-durchführung{
-  width: 20%;
+.content_durchführung{
+  width: 25%;
   margin: 20px;
   float: left;
+}
+
+.content_durchführung-img{
+  width: 100%;
 }
 
 .content_text{
