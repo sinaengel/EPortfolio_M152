@@ -19,7 +19,6 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src="js/main.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
@@ -30,32 +29,83 @@
 <body class="body">
 
     <nav class="navbar">
-      <button id="navTrainingsvorbereitung" class="navbar_btn"> Vorbereitung </button>
-      <button id="navDurchfuehrung"  class="navbar_btn"> Durchführung </button>
-      <button><img id="navHome" src="img/logo/Element1.png" class="navbar_img" alt="" ></button>
-      <button id="navAusruestung" class="navbar_btn">Ausrüstung</button>
-      <button id="navVideo" class="navbar_btn">Video</button>
+      <button id="navTrainingsvorbereitung" onclick="vorbereitungclicked()" class="navbar_btn"> Vorbereitung </button>
+      <button id="navDurchfuehrung" onclick="durchfuehrungclicked()" class="navbar_btn"> Durchführung </button>
+      <button onclick="homeclicked()" ><img id="navHome" onclick="homeclicked()" src="img/logo/Element1.png" class="navbar_img" alt="" ></button>
+      <button id="navAusruestung" onclick="ausruestungclicked()" class="navbar_btn">Ausrüstung</button>
+      <button id="navVideo" onclick="videoclicked()" class="navbar_btn">Video</button>
     </nav>
 
     <div id="mainpage">
-      main
+      <h1 class="mainpage_h1">Handball</h1>
+      <img src="img/nils.jpeg" class="mainpage_img" id="Einführungsbild">
+      <aside>
+          <h3> Über dieses Projekt</h3>
+          <p> In diesem Projekt möchte ich, die verschiedenen Aspekte der Tätigkeit als Handballtrainerin aufzeigen. Es dient primär zu schulischen Zwecken, kann jedoch auch im Rahmen des Vereines verwendung finden.</p>
+      </aside>
     </div>
 
-    <div id="trainingsvorbereitung" class="sites-displaynone">
-      vorbereitung
+    <div id="trainingsvorbereitung" class="sites-displaynone ">
+      <h1>Trainingsvorbereitung</h1>
+      <div>Grundsätzlich geht man in kein Training ohne Vorbereitung. Es ist wichtig, die Pläne der Altersklasse der Trainingsteilnehmer anzupassen.</div>
+
+    <div>
+      <h2>Theorie</h2>
+      <img src="img/SpielfeldTheorie.svg" alt="" class="content_img">
+      <div class="content_text-SVG">Um den Kindern aufzuzeigen, was wo auf dem Spielfeld vorkommt, habe ich diese SVG Datei erstellt. Hier habe ich die Fachbebegriffe an den Orten an denen sie stattfinden eingeschrieben.
+      So fällt es den Kindern leichter sich diese zu merken.</div>
+    </div>
     </div>
 
     <div id="durchfuehrung" class="sites-displaynone">
-      durfuerung
+      <h1>Durchführung</h1>
+      <div>Während der Durchführung des Trainings hatte ich eine Kamera bei mir. Mit der ich sowohl gute als auch weniger gute Momente einfieng.</div>
+      <div class="content">
+        <h2>Hat gut funktioniert</h2>
+        <img src="img/tschechenviereck.jpeg" alt="">
+      </div>
     </div>
 
-    <div id="elemente" class="sites-displaynone">
-      elemente
+    <div id="elemente" class="sites-displaynone, content">
+      <div>
+        <h1>Meine Ausrüstungsgegenstände</h1>
+        <div>Um ein Training erfolgreich durchzuführen, braucht es Vorbereitung. Dazu gehört nicht nur die effektive Trainingsvorbereitung, sondern auch das was man ins Training mitbringt.</div>
+      </div>
+      <div>
+        <h2>Apotheke</h2>
+        <img src="img/apotheke.jpeg" alt="" class="content_img">
+        <div class="content_text">Um für Verletzungen vorbereitet zu sein, trage ich stets eine Apotheke bei mir. Diese beinhaltet Tape, Eisspray, Desinfektionsmittel und Pflaster</div>
+      </div>
     </div>
 
     <div id="video" class="sites-displaynone">
-      video
+      <h1>Video</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_j9nORaZIm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+<footer class="footer">
+  <div class="footer_links">
+    <h5>Links</h5>
+      <div><a href="https://hcbruggen.ch/">Webseite HC Bruggen</a></div>
+      <div><a href="https://www.instagram.com/hcbruggen/">Instagram</a></div>
+  </div>
+
+  <aside class="footer_aside">
+    <h5>Impressum</h5>
+    <div>GBSSG</div>
+    <div>Demutstrasse 115</div>
+    <div>9012 St.Gallen</div>
+  </aside>
+
+  <aside class="footer_aside">
+    <div class="footer-copyright">(c) 2021 Sina Engel</div>
+  </aside>
+
+
+
+</footer>
 
 </body>
 

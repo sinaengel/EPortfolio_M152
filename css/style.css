@@ -1,3 +1,8 @@
+iframe{
+  align-content: center;
+
+}
+
 .body {
   font-family: 'Quicksand', sans-serif;
   background: #888888;
@@ -37,8 +42,81 @@ button:hover{
   display: none;
 }
 
+.mainpage_img{
+  width: 40%;
+  float: left;
+  margin: 25px;
+
+}
+
+.mainpage_aside{
+  float: left;
+  margin:25px;
+}
 
 
+.mainpage_h1{
+  margin: 25px;
+}
+
+.video_h1{
+  padding: 150px;
+}
+
+.footer{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:auto;
+  background:rgb(102, 153, 255);
+  left: 0;
+}
+.footer_links{
+  width: 30%;
+  padding-left: 20px;
+  float:left;
+}
+
+.footer_aside{
+  width: 30%;
+  float: left;
+  padding-left: 20px;
+}
+
+.footer-copyright{
+  position:absolute;
+  bottom: 2px;
+}
+
+.content_img{
+  width: 30%;
+  margin: 20px;
+  float: left;
+}
+
+.content_img-durchführung{
+  width: 20%;
+  margin: 20px;
+  float: left;
+}
+
+.content_text{
+  width: 60%;
+  padding: 20px;
+  float: left;
+}
+
+.content_text-SVG{
+  width: 60%;
+  padding: 20px;
+  float: left;
+  text-align: center;
+}
+
+.content{
+  margin: 20px;
+  display: none;
+}
 
 
 

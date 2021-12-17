@@ -2,15 +2,43 @@ const main = document.getElementById("mainpage");
 const vorbereitung = document.getElementById("trainingsvorbereitung");
 const durchfuehrung = document.getElementById("durchfuehrung");
 const elemente = document.getElementById("elemente");
-const video = document.getElementById("video");
+const video = document.getElementById('video');
 
-const btnhome = document.getElementById("navHome");
-const btnvorbereitung = document.getElementById("#navTrainingsvorbereitung");
-const btndurchführung = document.getElementById("navDurchfuehrung");
-const btnausruestung = document.getElementById("navAusruestung");
-const btnVideo = document.getElementById("navVideo");
+function vorbereitungclicked(){
+  main.style.display ="none";
+  vorbereitung.style.display="block";
+  durchfuehrung.style.display="none";
+  elemente.style.display="none";
+  video.style.display="none";
+}
 
+function videoclicked(){
+  main.style.display ="none";
+  vorbereitung.style.display="none";
+  durchfuehrung.style.display="none";
+  elemente.style.display="none";
+  video.style.display="block";
+}
 
+function ausruestungclicked(){
+  main.style.display ="none";
+  vorbereitung.style.display="none";
+  durchfuehrung.style.display="none";
+  elemente.style.display="block";
+  video.style.display="none";}
 
+function homeclicked(){
+  main.style.display ="block";
+  vorbereitung.style.display="none";
+  durchfuehrung.style.display="none";
+  elemente.style.display="none";
+  video.style.display="none";}
+
+function durchfuehrungclicked(){
+  main.style.display ="none";
+  vorbereitung.style.display="none";
+  durchfuehrung.style.display="block";
+  elemente.style.display="none";
+  video.style.display="none";}
 
 
