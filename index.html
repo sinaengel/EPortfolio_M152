@@ -1,9 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="">
 
+
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <link rel="icon" type="image/x-icon" href="img/logo/favicon-16x16.ico">
+  <title>Handball-SinaE</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,16 +15,91 @@
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
+
 </head>
 
-<body>
+<body class="body">
+
+    <nav class="navbar">
+      <button id="navTrainingsvorbereitung" onclick="vorbereitungclicked()" class="navbar_btn"> Vorbereitung </button>
+      <button id="navDurchfuehrung" onclick="durchfuehrungclicked()" class="navbar_btn"> Durchführung </button>
+      <button onclick="homeclicked()" ><img id="navHome" onclick="homeclicked()" src="img/logo/Element1.png" class="navbar_img" alt="" ></button>
+      <button id="navAusruestung" onclick="ausruestungclicked()" class="navbar_btn">Ausrüstung</button>
+      <button id="navVideo" onclick="videoclicked()" class="navbar_btn">Video</button>
+    </nav>
+
+    <div id="mainpage">
+      <h1 class="mainpage_h1">Handball</h1>
+      <img src="img/nils.jpeg" class="mainpage_img" id="Einführungsbild">
+      <aside>
+          <h3> Über dieses Projekt</h3>
+          <p> In diesem Projekt möchte ich, die verschiedenen Aspekte der Tätigkeit als Handballtrainerin aufzeigen. Es dient primär zu schulischen Zwecken, kann jedoch auch im Rahmen des Vereines verwendung finden.</p>
+      </aside>
+      <footer class="footer">
+        <p>Links: <a href="https://hcbruggen.ch/">HC-Bruggen Homepage</a>, <a href="https://www.instagram.com/hcbruggen/">HC Bruggen Instagram</a></p>
+        <p>Impressum: GBSSG, Demutstrasse 115, 9012 St. Gallen</p>
+        <p>(c)2021 Sina Engel</p>
+      </footer>
+    </div>
+
+    <div id="trainingsvorbereitung" class="sites-displaynone, content ">
+      <h1>Trainingsvorbereitung</h1>
+      <div>Grundsätzlich geht man in kein Training ohne Vorbereitung. Es ist wichtig, die Pläne der Altersklasse der Trainingsteilnehmer anzupassen.</div>
+
+    <div>
+      <h2>Theorie</h2>
+      <img src="img/SpielfeldTheorie.svg" alt="" class="content_img">
+      <div class="content_text-SVG">Um den Kindern aufzuzeigen, was wo auf dem Spielfeld vorkommt, habe ich diese SVG Datei erstellt. Hier habe ich die Fachbebegriffe an den Orten an denen sie stattfinden eingeschrieben.
+      So fällt es den Kindern leichter sich diese zu merken.</div>
+    </div>
+    </div>
+
+    <div id="durchfuehrung" class="sites-displaynone, content">
+      <h1>Durchführung</h1>
+      <div>Während der Durchführung des Trainings hatte ich eine Kamera bei mir. Mit der ich sowohl gute als auch weniger gute Momente einfieng.</div>
+      <div class="content_durchführung">
+        <h2>Hat gut funktioniert</h2>
+        <h5>Tschechenviereck</h5>
+        <img src="img/tschechenviereck.jpg" class="content_durchführung-img" alt="">
+        <div> Um den Kindern zu zeigen, wie Passen und Fangen funktioniert, haben ich ein sogenanntes Tschechenviereck gemacht. Hier laufen die Kinder im Kreis und passen sich gegenseitig
+        den Ball zu. Das Ziel der Übung ist es möglichst viele Pässe spielen zu können ohne den Ball auf den Boden fliegen zu lassen.</div>
+      </div>
+      <aside class="content_durchführung">
+        <h2>Bereitete Probleme</h2>
+        <h5>Schussübung</h5>
+        <img src="img/Schussuebung.JPG" class="content_durchführung-img" alt="">
+        <div>Was nicht gut fuktionierte, war die Schussübung. Da die Zielsicherheit der Kinder noch nicht so ausgeprägt ist.
+        In diesem Alter, ist das jedoch völlig normal. Eigentlich wäre das Ziel gewesen, dass alle Hütchen vom Schwedenkasten geschossen werden.</div>
+      </aside>
+    </div>
+
+    <div id="elemente" class="sites-displaynone, content">
+      <div>
+        <h1>Meine Ausrüstungsgegenstände</h1>
+        <div>Um ein Training erfolgreich durchzuführen, braucht es Vorbereitung. Dazu gehört nicht nur die effektive Trainingsvorbereitung, sondern auch das was man ins Training mitbringt.</div>
+      </div>
+      <div>
+        <h2>Apotheke</h2>
+        <img src="img/apotheke.jpeg" alt="" class="content_img">
+        <div class="content_text">Um für Verletzungen vorbereitet zu sein, trage ich stets eine Apotheke bei mir. Diese beinhaltet Tape, Eisspray, Desinfektionsmittel und Pflaster</div>
+      </div>
+    </div>
+
+    <div id="video" class="sites-displaynone, content">
+      <h1>Video</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_j9nORaZIm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
 
 
 </body>
